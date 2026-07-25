@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bodrum Temizlik ve Yaşlı Bakım Hizmetleri | Ev, Villa ve Ofis Temizliği</title>
+<title>Bodrum Temizlik ve Bakım Hizmetleri | Ev, Villa, Ofis, Yaşlı Bakım</title>
 
-<meta name="description" content="Bodrum'da ev temizliği, villa temizliği, ofis temizliği, yaşlı bakım ve hasta bakıcı hizmetleri. Güvenilir, profesyonel ve uygun fiyatlı hizmet.">
+<meta name="description" content="Bodrum temizlik hizmetleri, ev temizliği, villa temizliği, ofis temizliği, yaşlı bakım ve hasta bakıcı hizmetleri. Bodrum'un tüm mahallelerinde profesyonel hizmet.">
 
 <meta name="keywords" content="Bodrum temizlik, Bodrum ev temizliği, Bodrum villa temizliği, Bodrum yaşlı bakım, Bodrum hasta bakıcı, Bodrum ofis temizliği">
 
 <meta name="author" content="Bodrum Temizlik ve Bakım Hizmetleri">
 
-<meta property="og:title" content="Bodrum Temizlik ve Bakım Hizmetleri">
-<meta property="og:description" content="Bodrum'da profesyonel temizlik ve bakım hizmetleri.">
+<meta name="robots" content="index,follow">
+
+<meta name="theme-color" content="#0A8F3D">
+
 <meta property="og:type" content="website">
+
+<meta property="og:title" content="Bodrum Temizlik ve Bakım Hizmetleri">
+
+<meta property="og:description" content="Ev Temizliği • Villa Temizliği • Ofis Temizliği • Yaşlı Bakım Hizmetleri">
+
+<meta property="og:image" content="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80">
+
+<meta property="og:locale" content="tr_TR">
+
+<link rel="icon" href="favicon.ico">
 
 <style>
 
@@ -22,51 +37,73 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f5f7fa;
+background:#f7f7f7;
 color:#333;
-line-height:1.6;
+line-height:1.7;
 }
 
 header{
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80");
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80");
 background-size:cover;
 background-position:center;
-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
-color:white;
+color:#fff;
 }
 
-header h1{
-font-size:52px;
+.hero{
+max-width:900px;
+}
+
+.hero h1{
+font-size:58px;
 margin-bottom:20px;
 }
 
-header p{
-font-size:22px;
-margin-bottom:30px;
+.hero p{
+font-size:24px;
+margin-bottom:35px;
 }
 
 .btn{
 display:inline-block;
-background:#16a34a;
-color:white;
-padding:16px 34px;
+background:#0A8F3D;
+color:#fff;
+padding:18px 38px;
 border-radius:10px;
 text-decoration:none;
 font-size:20px;
 font-weight:bold;
+transition:.3s;
 }
 
 .btn:hover{
-background:#15803d;
+background:#087532;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px 22px;
+border-radius:35px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 20px rgba(0,0,0,.25);
+z-index:999;
 }
 
 section{
@@ -76,480 +113,49 @@ padding:80px 20px;
 }
 
 h2{
+font-size:40px;
 text-align:center;
-font-size:38px;
-margin-bottom:40px;
+margin-bottom:45px;
+color:#0A8F3D;
 }
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
 .card{
-background:white;
+background:#fff;
 padding:30px;
 border-radius:15px;
-box-shadow:0 8px 25px rgba(0,0,0,.10);
-text-align:center;
+box-shadow:0 5px 18px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card h3{
 margin-bottom:15px;
-color:#166534;
+color:#0A8F3D;
+font-size:26px;
 }
 
 .card p{
-font-size:17px;
+font-size:18px;
 }
 
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 22px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-z-index:999;
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
 }
 
-footer{
-background:#1f2937;
-color:white;
-text-align:center;
-padding:40px 20px;
-margin-top:50px;
+.hero p{
+font-size:20px;
 }
 
-</style>
+}
 
-</head>
-
-<body>
-
-<a class="whatsapp" href="https://wa.me/905528523302" target="_blank">
-WhatsApp
-</a>
-
-<header>
-
-<div>
-
-<h1>Bodrum Temizlik ve Bakım Hizmetleri</h1>
-
-<p>Ev Temizliği • Villa Temizliği • Ofis Temizliği • Yaşlı Bakımı</p>
-
-<a class="btn" href="tel:05528523302">
-📞 Hemen Ara
-</a>
-
-</div>
-
-</header>
-<section>
-
-<h2>Hizmetlerimiz</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🏠 Ev Temizliği</h3>
-<p>Tek seferlik, haftalık ve aylık profesyonel ev temizliği hizmeti.</p>
-</div>
-
-<div class="card">
-<h3>🏡 Villa Temizliği</h3>
-<p>Yazlık, villa ve lüks konutlar için detaylı temizlik.</p>
-</div>
-
-<div class="card">
-<h3>🏢 Ofis Temizliği</h3>
-<p>İş yerleri ve ofisler için düzenli hijyen ve temizlik hizmeti.</p>
-</div>
-
-<div class="card">
-<h3>👵 Yaşlı Bakım Hizmeti</h3>
-<p>Deneyimli ve güvenilir personellerimizle yaşlı bakım desteği.</p>
-</div>
-
-<div class="card">
-<h3>🩺 Hasta Bakıcı</h3>
-<p>Günlük ve uzun süreli hasta bakım hizmetleri sunuyoruz.</p>
-</div>
-
-<div class="card">
-<h3>🧹 İnşaat Sonrası Temizlik</h3>
-<p>Tadilat ve inşaat sonrası detaylı temizlik hizmeti.</p>
-</div>
-
-</div>
-
-</section>
-
-<section style="background:#ffffff;">
-
-<h2>Neden Bizi Tercih Etmelisiniz?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>✅ Güvenilir Hizmet</h3>
-<p>Deneyimli ve güvenilir ekibimizle kaliteli hizmet sunuyoruz.</p>
-</div>
-
-<div class="card">
-<h3>⚡ Hızlı Randevu</h3>
-<p>Aynı gün veya istediğiniz tarihte hizmet planlıyoruz.</p>
-</div>
-
-<div class="card">
-<h3>💰 Uygun Fiyat</h3>
-<p>Kaliteli hizmeti ekonomik fiyatlarla sunuyoruz.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Hizmet Verdiğimiz Bölgeler</h2>
-
-<p style="text-align:center;font-size:20px;line-height:2;">
-Bodrum Merkez • Bitez • Gümbet • Ortakent • Yalıkavak • Turgutreis • Torba • Gündoğan • Göltürkbükü • Gümüşlük • Akyarlar
-</p>
-
-</section>
-<section>
-
-<h2>İletişim</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>📞 Telefon</h3>
-
-<p><a href="tel:05528523302">0552 852 33 02</a></p>
-
-<h3 style="margin-top:20px;">💬 WhatsApp</h3>
-
-<p><a class="btn" href="https://wa.me/905528523302" target="_blank">WhatsApp'tan Yaz</a></p>
-
-</div>
-
-<div class="card">
-
-<h3>📍 Hizmet Bölgemiz</h3>
-
-<p>Bodrum ve çevresindeki tüm mahallelere hizmet veriyoruz.</p>
-
-<iframe
-src="https://www.google.com/maps?q=Bodrum&output=embed"
-width="100%"
-height="250"
-style="border:0;border-radius:10px;"
-loading="lazy">
-</iframe>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Müşteri Memnuniyeti</h2>
-
-<div class="cards">
-
-<div class="card">
-<p>⭐⭐⭐⭐⭐</p>
-<p>"Evimiz tertemiz oldu. Çok memnun kaldık."</p>
-</div>
-
-<div class="card">
-<p>⭐⭐⭐⭐⭐</p>
-<p>"Zamanında geldiler ve çok titiz çalıştılar."</p>
-</div>
-
-<div class="card">
-<p>⭐⭐⭐⭐⭐</p>
-<p>"Yaşlı bakım hizmetinden çok memnunuz."</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>Bodrum Temizlik ve Bakım Hizmetleri</h3>
-
-<p>
-Ev Temizliği • Villa Temizliği • Ofis Temizliği • Yaşlı Bakımı • Hasta Bakıcı
-</p>
-
-<p style="margin-top:15px;">
-📞 0552 852 33 02
-</p>
-
-<p style="margin-top:15px;">
-© 2026 Bodrum Temizlik ve Bakım Hizmetleri. Tüm hakları saklıdır.
-</p>
-<section>
-
-<h2>Sık Sorulan Sorular</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Hangi bölgelere hizmet veriyorsunuz?</h3>
-<p>Bodrum Merkez, Bitez, Gümbet, Yalıkavak, Turgutreis, Ortakent, Torba, Gündoğan ve çevresine hizmet veriyoruz.</p>
-</div>
-
-<div class="card">
-<h3>Temizlik malzemeleri size mi ait?</h3>
-<p>İsteğe bağlı olarak kendi profesyonel temizlik ürünlerimizi getiriyoruz.</p>
-</div>
-
-<div class="card">
-<h3>Aynı gün randevu alabilir miyim?</h3>
-<p>Müsaitliğe göre aynı gün hizmet sağlayabiliyoruz.</p>
-</div>
-
-</div>
-
-</section>
-</footer>
-<section>
-<section>
-
-<h2>Online Teklif Alın</h2>
-
-<div class="card">
-
-<form>
-
-<p>
-<input type="text" placeholder="Ad Soyad" style="width:100%;padding:15px;margin:10px 0;">
-</p>
-
-<p>
-<input type="tel" placeholder="Telefon Numaranız" style="width:100%;padding:15px;margin:10px 0;">
-</p>
-
-<p>
-<input type="text" placeholder="Hizmet Almak İstediğiniz Bölge" style="width:100%;padding:15px;margin:10px 0;">
-</p>
-
-<p>
-<textarea placeholder="Talebinizi Yazınız" style="width:100%;height:150px;padding:15px;margin:10px 0;"></textarea>
-</p>
-
-<p>
-<a class="btn" href="https://wa.me/905528523302" target="_blank">
-WhatsApp'tan Teklif Gönder
-</a>
-</p>
-
-</form>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Sık Sorulan Sorular</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Hangi bölgelere hizmet veriyorsunuz?</h3>
-<p>Bodrum Merkez, Bitez, Gümbet, Yalıkavak, Turgutreis, Ortakent, Torba, Gündoğan, Göltürkbükü ve çevresine hizmet veriyoruz.</p>
-</div>
-
-<div class="card">
-<h3>Temizlik malzemeleri size mi ait?</h3>
-<p>Talebe göre kendi profesyonel ekipmanlarımızı ve temizlik ürünlerimizi getiriyoruz.</p>
-</div>
-
-<div class="card">
-<h3>Aynı gün hizmet alabilir miyim?</h3>
-<p>Müsaitlik durumuna göre aynı gün randevu oluşturabiliyoruz.</p>
-</div>
-
-<div class="card">
-<h3>Nasıl randevu alabilirim?</h3>
-<p>Bizi telefonla arayabilir veya WhatsApp üzerinden hızlıca ulaşabilirsiniz.</p>
-</div>
-
-</div>
-
-</section>
-<h2>Hakkımızda</h2>
-
-<div class="card">
-
-<p style="font-size:18px;line-height:2;text-align:center;">
-
-Bodrum Temizlik ve Bakım Hizmetleri olarak ev temizliği, villa temizliği,
-ofis temizliği, yaşlı bakım ve hasta bakıcı hizmetlerinde güvenilir,
-titiz ve profesyonel çözümler sunuyoruz.
-
-Müşteri memnuniyetini ön planda tutarak Bodrum'un tüm mahallelerine
-zamanında ve kaliteli hizmet ulaştırıyoruz.
-
-Deneyimli ekibimizle hijyen, güven ve kaliteli hizmeti bir araya getiriyoruz.
-
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Neden Bizi Tercih Etmelisiniz?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🏆 Deneyimli Ekip</h3>
-<p>Alanında deneyimli ve güvenilir personeller.</p>
-</div>
-
-<div class="card">
-<h3>🕒 Zamanında Hizmet</h3>
-<p>Randevu saatine uygun ve planlı çalışma.</p>
-</div>
-
-<div class="card">
-<h3>🧼 Profesyonel Temizlik</h3>
-<p>Kaliteli ekipman ve hijyenik uygulamalar.</p>
-</div>
-
-<div class="card">
-<h3>💚 Müşteri Memnuniyeti</h3>
-<p>Her zaman müşteri memnuniyetini ön planda tutuyoruz.</p>
-</div>
-
-</div>
-
-</section>
-  <section>
-
-<h2>Hizmet Verdiğimiz Alanlar</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🏠 Ev Temizliği</h3>
-<p>Bodrum'da günlük, haftalık ve detaylı ev temizliği hizmeti sunuyoruz.</p>
-</div>
-
-<div class="card">
-<h3>🏡 Villa Temizliği</h3>
-<p>Yazlık ve villalar için sezonluk, giriş-çıkış ve detaylı temizlik.</p>
-</div>
-
-<div class="card">
-<h3>👵 Yaşlı Bakımı</h3>
-<p>Yaşlı bireylerin günlük yaşamına destek sağlayan güvenilir bakım hizmeti.</p>
-</div>
-
-<div class="card">
-<h3>🩺 Hasta Bakıcı</h3>
-<p>Evde bakım ihtiyacı olan hastalar için deneyimli yardımcı personel.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Bodrum'un Her Noktasındayız</h2>
-
-<p style="text-align:center;font-size:18px;line-height:2;max-width:900px;margin:auto;">
-
-Bodrum Merkez, Bitez, Gümbet, Ortakent, Turgutreis, Yalıkavak,
-Gündoğan, Göltürkbükü, Torba, Gümüşlük, Akyarlar, Konacık,
-Yalıçiftlik ve çevre mahallelerde profesyonel temizlik ve bakım
-hizmeti vermekteyiz.
-
-</p>
-
-</section>
-  <section>
-
-<h2>Bize Ulaşın</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>📞 Telefon</h3>
-
-<p><a href="tel:05528523302">0552 852 33 02</a></p>
-
-<br>
-
-<h3>💬 WhatsApp</h3>
-
-<p><a class="btn" href="https://wa.me/905528523302" target="_blank">WhatsApp'tan Yaz</a></p>
-
-<br>
-
-<h3>📍 Adres</h3>
-
-<p>Bodrum / Muğla</p>
-
-</div>
-
-<div class="card">
-
-<h3>📩 Bize Mesaj Gönderin</h3>
-
-<form>
-
-<input type="text" placeholder="Adınız Soyadınız" style="width:100%;padding:15px;margin:10px 0;">
-
-<input type="tel" placeholder="Telefon Numaranız" style="width:100%;padding:15px;margin:10px 0;">
-
-<input type="email" placeholder="E-posta Adresiniz" style="width:100%;padding:15px;margin:10px 0;">
-
-<textarea placeholder="Mesajınız" style="width:100%;height:180px;padding:15px;margin:10px 0;"></textarea>
-
-<a class="btn" href="https://wa.me/905528523302" target="_blank">Teklif İste</a>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Google'da Bizi Bulun</h2>
-
-<p style="text-align:center;font-size:20px;line-height:2;max-width:900px;margin:auto;">
-
-Bodrum Temizlik Hizmetleri, Bodrum Ev Temizliği, Bodrum Villa Temizliği,
-Bodrum Yaşlı Bakımı, Bodrum Hasta Bakıcı, Bodrum Ofis Temizliği,
-Bodrum İnşaat Sonrası Temizlik ve Bodrum Günlük Temizlik Hizmetleri
-alanlarında profesyonel hizmet vermekteyiz.
-
-</p>
-
-</section>
-</body>
-</html>
