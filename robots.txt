@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yusufutar0233-cell.github.io/Bodrumbakim/sitemap.xml
