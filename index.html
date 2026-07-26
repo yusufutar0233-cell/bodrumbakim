@@ -39,7 +39,48 @@ padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
 font-family:Arial,Helvetica,sans-serif;
+<style>
+
+/* Mevcut CSS kodların burada */
+
+...
+
+/* BURADAN SONRA EKLE */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
 }
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#0A8F3D;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#0A8F3D;
+}
+
+</style>}
 
 body{
 background:#f7f7f7;
