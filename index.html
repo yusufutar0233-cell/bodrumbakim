@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Bodrum Temizlik ve Bakım Hizmetleri | Ev Temizliği | Villa Temizliği | Yaşlı Bakım</title>
 
-<meta name="description" content="Bodrum'da ev temizliği, villa temizliği, ofis temizliği, yaşlı bakım ve hasta bakıcı hizmetleri. Profesyonel ve güvenilir ekip.">
+<meta name="description" content="Bodrum'da profesyonel ev temizliği, villa temizliği, ofis temizliği, yaşlı bakım ve hasta bakıcı hizmetleri.">
 
-<meta name="keywords" content="Bodrum temizlik, Bodrum ev temizliği, Bodrum villa temizliği, Bodrum yaşlı bakım, Bodrum hasta bakıcı">
+<meta name="keywords" content="Bodrum temizlik, Bodrum ev temizliği, Bodrum villa temizliği, Bodrum yaşlı bakım">
 
 <meta name="robots" content="index,follow">
 
 <link rel="canonical" href="https://yusufutar0233-cell.github.io/bodrumbakim/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,8 +29,8 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -46,9 +49,9 @@ display:block;
 }
 
 .container{
+width:90%;
 max-width:1300px;
 margin:auto;
-padding:0 20px;
 }
 
 nav{
@@ -56,14 +59,14 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:rgba(255,255,255,.92);
-backdrop-filter:blur(15px);
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 8%;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-z-index:9999;
+padding:20px 6%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(15px);
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+z-index:999;
 }
 
 .logo{
@@ -74,7 +77,7 @@ color:#0A8F3D;
 
 .menu{
 display:flex;
-gap:30px;
+gap:35px;
 align-items:center;
 }
 
@@ -87,54 +90,11 @@ transition:.3s;
 .menu a:hover{
 color:#0A8F3D;
 }
-  .hero-buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
 
-.btn{
-display:inline-block;
-padding:18px 40px;
-border-radius:50px;
-font-weight:700;
-transition:.3s;
-}
-
-.btn-primary{
-background:#0A8F3D;
-color:#fff;
-}
-
-.btn-primary:hover{
-transform:translateY(-4px);
-box-shadow:0 15px 35px rgba(10,143,61,.35);
-}
-
-.btn-secondary{
-background:#fff;
-color:#333;
-}
-
-.btn-secondary:hover{
-transform:translateY(-4px);
-}
-
-section{
-padding:100px 8%;
-}
-
-.section-title{
-font-size:42px;
-text-align:center;
-margin-bottom:50px;
-font-weight:800;
-color:#0A8F3D;
-}
 .whatsapp-btn{
 background:#0A8F3D;
 color:#fff;
-padding:13px 28px;
+padding:14px 28px;
 border-radius:50px;
 font-weight:700;
 transition:.3s;
@@ -154,58 +114,7 @@ linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.60)),
 url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80");
 background-size:cover;
 background-position:center;
-padding:0 8%;
-}
-
-.hero{
-max-width:700px;
-color:#fff;
-}
-
-.hero span{
-display:inline-block;
-padding:8px 18px;
-background:rgba(255,255,255,.15);
-border-radius:30px;
-margin-bottom:20px;
-}
-
-.hero h1{
-font-size:70px;
-font-weight:800;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-line-height:1.8;
-margin-bottom:40px;
-}
-.whatsapp-btn{
-background:#0A8F3D;
-color:#fff;
-padding:13px 28px;
-border-radius:50px;
-font-weight:700;
-transition:.3s;
-}
-
-.whatsapp-btn:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(10,143,61,.35);
-}
-
-header{
-height:100vh;
-display:flex;
-align-items:center;
-background:
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.60)),
-url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-padding-top:80px;
+padding:0 6%;
 }
 
 .hero{
@@ -224,9 +133,9 @@ font-size:15px;
 
 .hero h1{
 font-size:72px;
+font-weight:800;
 line-height:1.1;
 margin-bottom:20px;
-font-weight:800;
 }
 
 .hero p{
@@ -234,49 +143,73 @@ font-size:22px;
 line-height:1.8;
 margin-bottom:40px;
 }
-
-.hero-buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
+  .cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
-.btn{
-padding:18px 40px;
-border-radius:50px;
-font-weight:700;
-display:inline-block;
-transition:.3s;
+.card{
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.35s;
 }
 
-.btn-primary{
-background:#0A8F3D;
-color:white;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
-.btn-primary:hover{
-transform:translateY(-5px);
+.card h3{
+font-size:26px;
+margin-bottom:15px;
+color:#0A8F3D;
 }
 
-.btn-secondary{
-background:white;
-color:#333;
+.card p{
+line-height:1.8;
+color:#555;
 }
 
-.btn-secondary:hover{
-transform:translateY(-5px);
+footer{
+background:#111;
+color:#fff;
+padding:80px 8%;
+text-align:center;
+}
+
+footer h2{
+color:#fff;
+margin-bottom:20px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.menu{
+display:none;
+}
+
+.cards{
+grid-template-columns:1fr;
 }
 
 section{
-padding:100px 0;
+padding:70px 20px;
 }
 
-h2{
-font-size:42px;
-text-align:center;
-margin-bottom:60px;
-color:#0A8F3D;
 }
+
+</style>
 </head>
 
 <body>
@@ -288,13 +221,17 @@ Bodrum Bakım
 </div>
 
 <div class="menu">
+
 <a href="#hizmetler">Hizmetler</a>
+
 <a href="#iletisim">İletişim</a>
 
 <a class="whatsapp-btn"
 href="https://wa.me/905528523302"
 target="_blank">
+
 WhatsApp
+
 </a>
 
 </div>
@@ -315,7 +252,7 @@ Temizlik &amp; Bakım
 </h1>
 
 <p>
-Ev temizliği, villa temizliği, ofis temizliği ve yaşlı bakım hizmetlerinde Bodrum'un her noktasına hizmet veriyoruz.
+Ev temizliği, villa temizliği, ofis temizliği ve yaşlı bakım hizmetlerinde Bodrum'un her noktasına hızlı ve güvenilir hizmet veriyoruz.
 </p>
 
 <div class="hero-buttons">
@@ -323,12 +260,16 @@ Ev temizliği, villa temizliği, ofis temizliği ve yaşlı bakım hizmetlerinde
 <a class="btn btn-primary"
 href="https://wa.me/905528523302"
 target="_blank">
+
 WhatsApp Yaz
+
 </a>
 
 <a class="btn btn-secondary"
 href="#hizmetler">
+
 Hizmetleri Gör
+
 </a>
 
 </div>
@@ -338,7 +279,7 @@ Hizmetleri Gör
 </div>
 
 </header>
-  <section id="hizmetler">
+<section id="hizmetler">
 
 <div class="container">
 
@@ -351,42 +292,42 @@ Hizmetlerimiz
 <div class="card">
 <h3>🏠 Ev Temizliği</h3>
 <p>
-Günlük, haftalık ve detaylı profesyonel ev temizliği hizmeti.
+Günlük, haftalık ve detaylı profesyonel ev temizliği hizmeti sunuyoruz.
 </p>
 </div>
 
 <div class="card">
 <h3>🏡 Villa Temizliği</h3>
 <p>
-Yazlık ve villalar için kapsamlı temizlik hizmeti.
+Yazlık ve villalar için kapsamlı temizlik ve bakım hizmeti.
 </p>
 </div>
 
 <div class="card">
 <h3>🏢 Ofis Temizliği</h3>
 <p>
-İş yerleri ve ofisler için düzenli temizlik çözümleri.
+İş yerleri ve ofisler için düzenli profesyonel temizlik çözümleri.
 </p>
 </div>
 
 <div class="card">
 <h3>👵 Yaşlı Bakımı</h3>
 <p>
-Yaşlı bireyler için güvenilir evde bakım ve destek hizmeti.
+Yaşlı bireyler için güvenilir evde bakım ve günlük destek hizmeti.
 </p>
 </div>
 
 <div class="card">
 <h3>🩺 Hasta Bakıcı</h3>
 <p>
-Refakat ve günlük bakım desteği sunuyoruz.
+Refakat, günlük bakım ve yardımcı personel desteği sağlıyoruz.
 </p>
 </div>
 
 <div class="card">
-<h3>📍 Bodrum Geneli</h3>
+<h3>📍 Hizmet Bölgeleri</h3>
 <p>
-Yalıkavak, Bitez, Gümbet, Türkbükü, Ortakent, Turgutreis ve tüm Bodrum.
+Bodrum Merkez, Yalıkavak, Bitez, Gümbet, Türkbükü, Ortakent, Turgutreis ve Gümüşlük.
 </p>
 </div>
 
@@ -395,50 +336,7 @@ Yalıkavak, Bitez, Gümbet, Türkbükü, Ortakent, Turgutreis ve tüm Bodrum.
 </div>
 
 </section>
-  <section id="hizmetler">
-
-<div class="container">
-
-<h2 class="section-title">Hizmetlerimiz</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🏠 Ev Temizliği</h3>
-<p>Günlük, haftalık ve detaylı ev temizliği hizmeti.</p>
-</div>
-
-<div class="card">
-<h3>🏡 Villa Temizliği</h3>
-<p>Yazlık ve villalar için profesyonel temizlik hizmeti.</p>
-</div>
-
-<div class="card">
-<h3>🏢 Ofis Temizliği</h3>
-<p>İş yerleri ve ofisler için düzenli temizlik.</p>
-</div>
-
-<div class="card">
-<h3>👵 Yaşlı Bakımı</h3>
-<p>Evde güvenilir yaşlı bakım ve destek hizmeti.</p>
-</div>
-
-<div class="card">
-<h3>🩺 Hasta Bakıcı</h3>
-<p>Refakat ve günlük bakım desteği sunuyoruz.</p>
-</div>
-
-<div class="card">
-<h3>📍 Bodrum Geneli</h3>
-<p>Yalıkavak, Bitez, Gümbet, Türkbükü, Ortakent, Turgutreis ve tüm Bodrum.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-  <section id="iletisim">
+<section id="iletisim">
 
 <div class="container">
 
@@ -460,8 +358,6 @@ Ev temizliği, villa temizliği, ofis temizliği ve yaşlı bakım hizmetleri i�
 📞 <strong>0552 852 33 02</strong>
 </p>
 
-<br>
-
 <p>
 ✉️ yusufutar02@gmail.com
 </p>
@@ -481,29 +377,24 @@ WhatsApp'tan Hemen Yaz
 </div>
 
 </section>
-  <footer>
+
+<footer>
 
 <div class="container">
 
 <h2>Bodrum Temizlik ve Bakım</h2>
 
 <p>
-Profesyonel Ev • Villa • Ofis Temizliği ve Yaşlı Bakım Hizmetleri
+Profesyonel Ev • Villa • Ofis Temizliği • Yaşlı Bakım Hizmetleri
 </p>
 
 <br>
 
-<p>
-📍 Bodrum / Muğla
-</p>
+<p>📍 Bodrum / Muğla</p>
 
-<p>
-📞 0552 852 33 02
-</p>
+<p>📞 0552 852 33 02</p>
 
-<p>
-✉️ yusufutar02@gmail.com
-</p>
+<p>✉️ yusufutar02@gmail.com</p>
 
 <br>
 
@@ -524,3 +415,6 @@ WhatsApp'tan Ulaşın
 </div>
 
 </footer>
+
+</body>
+</html>
