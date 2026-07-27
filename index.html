@@ -219,7 +219,20 @@ display:flex;
 gap:20px;
 flex-wrap:wrap;
 }
+.btn-primary:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(10,143,61,.35);
+}
 
+.btn-secondary:hover{
+transform:translateY(-4px);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
 .btn{
 display:inline-block;
 padding:18px 40px;
@@ -258,16 +271,7 @@ text-align:center;
 margin-bottom:60px;
 color:#0A8F3D;
 }
-  .section-title{
-font-size:42px;
-font-weight:800;
-text-align:center;
-margin-bottom:60px;
-color:#0A8F3D;
-}
-  section{
-padding:100px 0;
-}
+
 @media(max-width:900px){
 
 .hero h1{
